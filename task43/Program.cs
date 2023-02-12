@@ -20,15 +20,15 @@ double InputNumber2(string message)
 }
 
 
-void CrossingPoint (double b1, double k1, double b2, double k2)
+void CrossingPoint(double b1, double k1, double b2, double k2)
 {
-var x = -(b1 - b2) / (k1 - k2);
-var y = k1 * x + b1;
+    var x = -(b1 - b2) / (k1 - k2);
+    var y = k1 * x + b1;
 
-x = Math.Round(x, 3);
-y = Math.Round(y, 3);
+    x = Math.Round(x, 3);
+    y = Math.Round(y, 3);
 
-Console.WriteLine($"Прямые пересекаются в точке: ({x};{y})");
+    Console.WriteLine($"Прямые пересекаются в точке: ({x};{y})");
 }
 
 
@@ -36,7 +36,7 @@ double b1 = InputNumber2("Введите b1 : ");
 double k1 = InputNumber2("Введите k1 : ");
 double b2 = InputNumber2("Введите b2 : ");
 double k2 = InputNumber2("Введите k2 : ");
-CrossingPoint (b1,k1,b2,k2);
+CrossingPoint(b1, k1, b2, k2);
 
 
 
